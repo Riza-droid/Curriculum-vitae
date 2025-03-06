@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar, .right-sidebar {
-    width: 250px;
+    width: 350px;
     height: 100vh;
     background: rgba(8, 139, 233, 0.8);
     position: fixed;
