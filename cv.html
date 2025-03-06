@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <img src="404599890_845157830644068_4376051749509255342_n.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <h3>Jazh tene Daluna Orale</h3>
+            <p>BSIT Student</p>
+        </div>
+        <a class="nav-link" href="about.html" onclick="loadContent(event, 'about.html')">Personal Data</a>
+        <a class="nav-link" href="education.html" onclick="loadContent(event, 'education.html')">Education</a>
+        <a class="nav-link" href="contact.html" onclick="loadContent(event, 'contact.html')">Contact</a>
+        <a class="nav-link" href="experience.html" onclick="loadContent(event, 'experience.html')">Experience</a>
+        <a class="nav-link" href="skills.html" onclick="loadContent(event, 'skills.html')">Language Skills</a>
+    </nav>
+    
+    <nav class="right-sidebar">
+        <img src="474154566_1952286635282131_6470172986359447517_n.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <h3>Riza Salubod Tual</h3>
+            <p>BSIT Student</p>
+        </div>
+        <a class="nav-link" href="about copy.html" onclick="loadContent(event, 'about copy.html')">Personal Data</a>
+        <a class="nav-link" href="education copy.html" onclick="loadContent(event, 'education copy.html')">Education</a>
+        <a class="nav-link" href="contact copy.html" onclick="loadContent(event, 'contact copy.html')">Contact</a>
+        <a class="nav-link" href="experience copy.html" onclick="loadContent(event, 'experience copy.html')">Experience</a>
+        <a class="nav-link" href="skills copy.html" onclick="loadContent(event, 'skills copy.html')">Language Skills</a>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="content-container">
+        <!-- Default Logo/Live Background -->
+        <div id="default-view">
+            <img src="download__8_-removebg-preview.png" alt="Company Logo" class="center-logo">
+            <p class="welcome-text">Welcome! Select a profile to view details.</p>
+        </div>
+
+        <!-- Content Box (Hidden Initially) -->
+        <div id="content-box">
+            <button class="close-btn" onclick="closeContent()">✖</button>
+            <iframe id="content-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function loadContent(event, url) {
+            event.preventDefault(); // Prevent default link action
+            document.getElementById('default-view').style.display = 'none'; // Hide default logo
+            document.getElementById('content-box').style.display = 'block'; // Show content box
+            document.getElementById('content-frame').src = url; // Load content into iframe
+        }
+
+        function closeContent() {
+            document.getElementById('content-box').style.display = 'none'; // Hide content box
+            document.getElementById('default-view').style.display = 'flex'; // Show default logo
+            document.getElementById('content-frame').src = ""; // Clear iframe
+        }
+    </script>
+<script src="script.js"></script>
+    
+</body>
+</html>
