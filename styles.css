@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar, .right-sidebar {
-    width: 350px;
+    width: 300px;
     height: 100vh;
     background: rgba(8, 139, 233, 0.8);
     position: fixed;
@@ -83,15 +83,16 @@ body {
 }
 
 .center-logo {
-    width: 450px;
+    width: 50px;
     height: auto;
     animation: fadeIn 1s ease-in-out;
 }
 
 .welcome-text {
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
-    color: rgb(176, 64, 51);
+    color: rgb(3, 3, 3);
     font-weight: bold;
 }
 
