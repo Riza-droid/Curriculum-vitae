@@ -34,15 +34,15 @@
         <a class="nav-link" href="skills copy.html" onclick="loadContent(event, 'skills copy.html')">Language Skills</a>
     </nav>
 
-    <!-- Content Area -->
+   
     <div class="content-container">
-        <!-- Default Logo/Live Background -->
+  
         <div id="default-view">
             <img src="download__8_-removebg-preview.png" alt="Company Logo" class="center-logo">
             <p class="welcome-text">Welcome! Select a profile to view details.</p>
         </div>
 
-        <!-- Content Box (Hidden Initially) -->
+    
         <div id="content-box">
             <button class="close-btn" onclick="closeContent()">✖</button>
             <iframe id="content-frame" src="" frameborder="0"></iframe>
@@ -54,16 +54,16 @@
 
     <script>
         function loadContent(event, url) {
-            event.preventDefault(); // Prevent default link action
-            document.getElementById('default-view').style.display = 'none'; // Hide default logo
-            document.getElementById('content-box').style.display = 'block'; // Show content box
-            document.getElementById('content-frame').src = url; // Load content into iframe
+            event.preventDefault();
+            document.getElementById('default-view').style.display = 'none'; 
+            document.getElementById('content-box').style.display = 'block';
+            document.getElementById('content-frame').src = url; 
         }
 
         function closeContent() {
-            document.getElementById('content-box').style.display = 'none'; // Hide content box
-            document.getElementById('default-view').style.display = 'flex'; // Show default logo
-            document.getElementById('content-frame').src = ""; // Clear iframe
+            document.getElementById('content-box').style.display = 'none';
+            document.getElementById('default-view').style.display = 'flex'; 
+            document.getElementById('content-frame').src = "";
         }
     </script>
 <script src="script.js"></script>
