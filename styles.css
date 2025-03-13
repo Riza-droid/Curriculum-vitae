@@ -95,7 +95,7 @@ body {
     font-weight: bold;
 }
 
-/* Content Box */
+
 #content-box {
     display: none;
     background: rgb(130, 211, 210);
@@ -109,7 +109,7 @@ body {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Iframe */
+
 #content-frame {
     width: 100%;
     height: 100%;
