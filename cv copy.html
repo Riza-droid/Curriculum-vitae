@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles copy.css">
+    
+</head>
+<body>
+
+    
+    <nav class="sidebar left-sidebar">
+        <img src="404599890_845157830644068_4376051749509255342_n.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <h3>Jazh Tene Daluna Orale</h3>
+            <p>BSIT Student</p>
+        </div>
+        <button class="btn-section" onclick="scrollToSection('jazh-personal')">Personal Data</button>
+        <button class="btn-section" onclick="scrollToSection('jazh-education')">Education</button>
+        <button class="btn-section" onclick="scrollToSection('jazh-contact')">Contact</button>
+        <button class="btn-section" onclick="scrollToSection('jazh-experience')">Experience</button>
+        <button class="btn-section" onclick="scrollToSection('jazh-skills')">Language Skills</button>
+    </nav>
+
+    
+    <nav class="sidebar right-sidebar">
+        <img src="unnamed.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <h3>Riza Salubod Tual</h3>
+            <p>BSIT Student</p>
+        </div>
+        <button class="btn-section" onclick="scrollToSection('riza-personal')">Personal Data</button>
+        <button class="btn-section" onclick="scrollToSection('riza-education')">Education</button>
+        <button class="btn-section" onclick="scrollToSection('riza-contact')">Contact</button>
+        <button class="btn-section" onclick="scrollToSection('riza-experience')">Experience</button>
+        <button class="btn-section" onclick="scrollToSection('riza-skills')">Language Skills</button>
+    </nav>
+
+   
+    <div class="content-container" id="content-box">
+        <h2>Welcome! View Information Below</h2>
+
+        
+        <div id="jazh-personal" class="content-section">
+            <h2>PERSONAL DATA</h2>
+        <p class="info">&#128100; <strong>Name:</strong> Jazh tene Daluna Orale</p>
+        <p class="info">&#128197; <strong>Date of Birth:</strong> October 17, 2002</p>
+        <p class="info">&#127757; <strong>Place of Birth:</strong>Agtatacay Norte, Sapian , Capiz</p>
+        <p class="info">&#128102;  <strong>Age:</strong> 23</p>
+        <p class="info">&#9794; <strong>Sex:</strong> Male</p>
+        <p class="info">&#10084;</i> <strong>Civil Status:</strong> Single</p>
+        <p class="info">&#127757; <strong>Citizenship:</strong> Filipino</p>
+        </div>
+
+        <div id="jazh-education" class="content-section">
+            <h2>EDUCATION</h2>
+            <p><span class="icon">🏫</span> <strong>Lopez Jaena Elementary Central School</strong></p>
+            <p>SY: 2014 - 2015</p>
+            <p><span class="icon">🎓</span> <strong>Misamis Occidental National High School</strong></p>
+            <p>SY: 2020 - 2021</p>
+            <p><span class="icon">🏛️</span> <strong>University of Science and Technology of Southern Philippines</strong></p>
+            <p>SY: 2023 - 2024 (Current Student)</p>
+        </div>
+
+        <div id="jazh-contact" class="content-section">
+            <h3>CONTACT</h3>
+            <p><span class="icon">📞</span> +63 912 745 266</p>
+        <p><span class="icon">📧</span> jazhteneorale@gmail.com</p>
+        <p><span class="icon">📍</span> Western Poblacion, Lopez Jaena, Misamis Occidental</p>
+        </div>
+
+        <div id="jazh-experience" class="content-section">
+            <h3>EXPERIENCE</h3>
+            <p><span class="icon">🏫</span> <strong>Computer servicing Service</strong></p>
+            <p>SY: 2014 - 2015</p>
+            <p><span class="icon">🎓</span> <strong>Comple 80 hour</strong></p>
+            <p>SY: 2020 - 2021</p>
+            <p><span class="icon">🏛️</span> <strong>DICT Seminar</strong></p>
+            <p>Complet one day</p>
+        </div>
+
+        <div id="jazh-skills" class="content-section">
+            <h3>LANGUAGE SKILLS</h3>
+            <ul>
+                <li><span class="icon">💻</span> C</li>
+        <li><span class="icon">🔷</span> C#</li>
+        <li><span class="icon">🐍</span> Python</li>
+        <li><span class="icon">☕</span> Java</li>
+        <li><span class="icon">🌐</span> HTML</li>
+            </ul>
+        </div>
+
+        <!-- Profile 2 (Riza) -->
+        <div id="riza-personal" class="content-section">
+            <h3>PERSONAL DATA</h3>
+            <p class="info">&#128100; <strong>Name:</strong> Riza Salubod Tual</p>
+            <p class="info">&#128197; <strong>Date of Birth:</strong> June 02 2005</p>
+            <p class="info">&#127757; <strong>Place of Birth:</strong> San Pedro Aloran Misamis Occidental</p>
+            <p class="info">&#128102;  <strong>Age:</strong> 19</p>
+            <p class="info">&#9794; <strong>Sex:</strong> Female</p>
+            <p class="info">&#10084;</i> <strong>Civil Status:</strong> Single</p>
+            <p class="info">&#127757; <strong>Citizenship:</strong> Filipino</p>
+        </div>
+
+        <div id="riza-education" class="content-section">
+            <h3>Education - Riza</h3>
+            <p><span class="icon">🏫</span> <strong>San Pedro Aloran Misamis Occidental</strong></p>
+            <p>SY: 2016 - 2017</p>
+        
+            <p><span class="icon">🎓</span> <strong>Saint Matthew's High School of Aloran Inc.</strong></p>
+            <p>SY: 2022 - 2023</p>
+       
+            <p><span class="icon">🏛️</span> <strong>University of Science and Technology of Southern Philippines</strong></p>
+            <p>SY: 2024 - 2025 (Current Student)</p>
+        </div>
+
+        <div id="riza-contact" class="content-section">
+            <h3>CONTACT</h3>
+            <p><span class="icon">📞</span> +639 541 634 876</p>
+            <p><span class="icon">📧</span> rizasalubodtual@gmail.com</p>
+            <p><span class="icon">📍</span> Palayan, Aloran, Misamis Occidental</p>
+        </div>
+
+        <div id="riza-experience" class="content-section">
+            <h3>EXPERIENCE</h3>
+            <ul>
+            <p><span class="icon">🏫</span> <strong>Work Emmersion</strong></p>
+            <p>SY: 2022-2023</p>
+            <p><span class="icon">🎓</span> <strong>Complete 80 hour</strong></p>
+        </ul>
+        </div>
+
+        <div id="riza-skills" class="content-section">
+            <h3>Language Skills - Riza</h3>
+            <ul>
+                <li><span class="icon">🔷</span> C#</li>
+                <li><span class="icon">🐍</span> Python</li>
+                <li><span class="icon">☕</span> Java</li>
+                <li><span class="icon">🌐</span> HTML</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            let target = document.getElementById(sectionId);
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+
+</body>
+</html>
